@@ -1,0 +1,36 @@
+.parent {
+  background-color: aquamarine;
+  height: 500px;
+  width: 500px;
+}
+
+.child {
+  background-color: bisque;
+  height: 50%;
+  width: 50%;
+}
+
+.parent:hover .child {
+  animation: left-to-right 1s ease-in forwards infinite alternate ;
+  
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: blanchedalmond;
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  50% {
+    background-color: khaki;
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    background-color: burlywood;
+    transform: translateX(100%);
+  }
+}
